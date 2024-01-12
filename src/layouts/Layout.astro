@@ -1,5 +1,7 @@
 ---
 import Header from "../components/Header.astro";
+// Supports weights 100-900
+import "@fontsource-variable/onest";
 
 interface Props {
   title: string;
@@ -25,7 +27,20 @@ const { description, title } = Astro.props;
 </html>
 <style is:global>
   html {
-    font-family: system-ui, sans-serif;
-    background: #13151a;
+    font-family: "Onest Variable", system-ui, sans-serif;
+    background: #ffffff;
+  }
+  p {
+    color: rgba(0, 0, 0, 0.8);
+    line-height: 1.4;
+    margin-bottom: 1em;
+    font-weight: 100;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+  }
+
+  p strong {
+    color: black;
+    font-weight: 700;
   }
 </style>

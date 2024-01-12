@@ -1,0 +1,29 @@
+---
+import BentoItem from "../components/BentoItem.astro";
+---
+
+<section
+  class="text-pretty px-20 max-w-[1400px] text-xl text-left mx-auto my-24"
+>
+  <h2
+    class="text-5xl font-bold text-center text-wrap mx-auto mb-10 tracking-wide"
+  >
+    Servicios
+    <div class="grid grid-cols-6 auto-rows-auto gap-4 mx-auto p-20">
+      <BentoItem
+        img="/basic-life-support.webp"
+        alt="Soporte vital básico"
+        title="Soporte vital básico"
+        description="Para los pacientes que necesitan transporte médico, dispone de una cama para pacientes, monitor de pulso y dispositivo de oxígeno."
+        class="col-span-6 md:col-span-3"
+      />
+      <BentoItem
+        img="/patient-trasnport-vehicle.webp"
+        alt="Vehículo de transporte de pacientes"
+        title="Vehículo de transporte de pacientes"
+        description="El PTV es un vehículo de transporte de pacientes no urgente totalmente equipado como una ambulancia normal."
+        class="col-span-6 md:col-span-3"
+      />
+    </div>
+  </h2>
+</section>
